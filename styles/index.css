@@ -1,0 +1,117 @@
+body {
+  box-sizing: border-box;
+  background-color: teal;
+  /* Ajustamos la página a todo el ancho y largo del navegador */
+  height: 100%;
+  width: 100%;
+  /* Cambiamos la tipografía de manera global */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+button {
+  border: none;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding-top: 10px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.place-card {
+  background-color: white;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.place-card:hover {
+  transform: scale(1.05);
+}
+
+.place-card .header {
+  position: relative;
+  font-size: 22px;
+  background-color: lightseagreen;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.place-card .header .title {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.place-card .header .address {
+  font-size: 14px;
+}
+
+.place-card .header .add-place-button {
+  position: absolute;
+  right: 5px;
+  top: 25%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: bisque;
+  text-transform: uppercase;
+}
+
+.place-card .content {
+  padding: 5px;
+}
+
+.travel-itinerary {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: lightcoral;
+  width: 200px;
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.travel-itinerary .title {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.travel-itinerary .items {
+  height: 70%;
+  overflow-y: auto;
+}
+
+.travel-itinerary .items .item {
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
