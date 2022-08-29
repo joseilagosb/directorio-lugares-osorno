@@ -1,4 +1,6 @@
-CREATE TABLE places(
+CREATE DATABASE IF NOT EXISTS places_directory;
+
+CREATE TABLE places_directory.places(
 	id int not null auto_increment,
     placeName varchar(80) not null,
     placeShortName varchar(40) not null,
@@ -10,7 +12,7 @@ CREATE TABLE places(
     primary key(id)
 );
 
-insert into places(id, placeName, placeShortName, placeAddress, placeType, surface, attentionSurface) values 
+insert into places_directory.places(id, placeName, placeShortName, placeAddress, placeType, surface, attentionSurface) values 
 (1, "Lider Casona Osorno", "Líder Casona", "René Soriano Bórquez 2855", 1, 5530, 3870),
 (2, "Homecenter Sodimac/Sodimac Constructor", "Sodimac", "René Soriano Bórquez 2619", 7, 9160, 6410),
 (3, "Farmacia Cruz Verde Ercilla", "Cruz Verde Ercilla", "Cesar Ercilla 1740", 6, 110, 80),
