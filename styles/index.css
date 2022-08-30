@@ -9,10 +9,12 @@ body {
   letter-spacing: 2px;
 }
 
+/* Esta instrucción significa "TODOS LOS H1 TENDRÁN ESTA CARACTERÍSTICAS" */
 h1 {
   font-size: 36px;
 }
 
+/* Esta instrucción significa "TODOS LOS BOTONES TENDRÁN ESTAS CARACTERÍSTICAS" */
 button {
   border: none;
   transition: transform 0.3s;
@@ -40,14 +42,17 @@ button:hover {
 .place-card {
   background-color: white;
   margin-bottom: 20px;
+  /* Transición de 0.3s al modificar la variable transform */
   transition: transform 0.3s;
 }
 
+/* Cuando acerco el mouse a este elemento... */
 .place-card:hover {
   transform: scale(1.05);
 }
 
 .place-card .header {
+  /* position: relative hace que los absolute de los elementos hijo se fijen en referencia a las dimensiones de este elemento. */
   position: relative;
   font-size: 22px;
   background-color: lightseagreen;
@@ -65,10 +70,12 @@ button:hover {
 }
 
 .place-card .header .add-place-button {
+  /* position: absolute deja el botón en una posición específica en las dimensiones del encabezado (por qué el encabezado? porque está con position: relative). */
   position: absolute;
   right: 5px;
   top: 25%;
   padding: 5px;
+  /* Display: flex estira  */
   display: flex;
   align-items: center;
   justify-content: center;

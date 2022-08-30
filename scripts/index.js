@@ -1,4 +1,7 @@
+console.log("Código javascript");
+
 $(".add-place-button").each(function () {
+  // Se agrega un "listener" a cada botón de 'agregar lugar'
   $(this).on("click", function () {
     const numberOfItems = $(".travel-itinerary .items").children().length;
 
